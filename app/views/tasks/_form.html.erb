@@ -1,0 +1,15 @@
+
+<div class="container text-center">
+  <div class="form">
+    <%= form_for(@task, :html => {:class => ""}) do |f| %>
+      <div class="form-body">
+        <%= f.label :name, class: "padding-right" %>
+        <%= f.text_field :name %>
+        <%= f.label :details, class: "padding-right" %>
+        <%= f.text_field :details %>
+      </div>
+        <%= f.submit class: "btn btn-warning" %>
+    <% end %>
+  </div>
+</div>
+
